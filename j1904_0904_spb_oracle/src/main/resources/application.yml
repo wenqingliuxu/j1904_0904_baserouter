@@ -1,0 +1,16 @@
+
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: j1904
+    password: j1904
+    url: jdbc:oracle:thin:@127.0.0.1/ORCL
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: serice-producer
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.qf.j1904.pojo
+
